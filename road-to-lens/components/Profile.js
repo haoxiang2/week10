@@ -14,9 +14,9 @@ export default function Profile(props) {
               {profile.picture ? (
                 <img
                   src={
-                    profile.picture.original
-                      ? profile.picture.original.url
-                      : profile.picture.uri
+                   profile.picture.original
+                     ? profile.picture.original.url
+                     : profile.picture.uri
                   }
                   className="h-48 w-full object-cover md:h-full md:w-48"
                 />
@@ -32,7 +32,7 @@ export default function Profile(props) {
             <div className="p-8">
               <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                 {profile.handle}
-                {displayFullProfile &&
+                {displayFullProfile && 
                   " (" + profile.name + ")"}
               </div>
               <div className="block mt-1 text-sm leading-tight font-medium text-black hover:underline">
@@ -44,9 +44,9 @@ export default function Profile(props) {
                 {profile.stats.totalFollowers}
               </p>
             </div>
+           </div>
           </div>
-        </div>
-      </Link>
-    </div>
-  );
+        </Link>
+      </div>
+    );
 }
